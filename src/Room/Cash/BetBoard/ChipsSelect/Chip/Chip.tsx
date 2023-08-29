@@ -28,7 +28,7 @@ const Chip: FC<BetButtonAttributes> = (props: BetButtonAttributes) => {
   }, [selected]);
 
   const setImgSource = (chipName: string): string => {
-    const mainPath = '../../../../resources/chips/';
+    const mainPath = `${process.env.PUBLIC_URL}/resources/chips/`;
     let chip = 'd1';
     switch (chipName) {
         case ChipBetNames.betA:

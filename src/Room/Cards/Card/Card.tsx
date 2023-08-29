@@ -14,7 +14,7 @@ type CardAttributes = {
 }
 
 function setCardImgSource(value: CardValue, suit: Suit): string {
-  const mainPath = '../../../resources/cards/';
+  const mainPath = `${process.env.PUBLIC_URL}/resources/cards/`;
   const card = value === CardValue.X ? 'x' : `${value}${suit}`;
   return `${mainPath}${card}.gif`;
 }

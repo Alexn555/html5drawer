@@ -27,6 +27,10 @@ without any Canvas.
 Also React-mitt was used to connect component with pubSub pattern, that is, signals.
 Game only for 2 players -> Hero (You) and Opponent (AI player).
 
+Demo: 
+[link](https://norwaydict.com/html5games/html5drawer/)
+
+
 NOTICE: 
 This game uses Session Storage to save user settings.
 Just good notice.
