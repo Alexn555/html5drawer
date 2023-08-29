@@ -1,4 +1,4 @@
-## Available Scripts
+## HTML5 Draw Poker game
 
 In the project directory, you can run:
 
