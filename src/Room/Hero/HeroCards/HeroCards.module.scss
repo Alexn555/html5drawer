@@ -1,0 +1,14 @@
+.container {
+    margin-top: -40px;
+    margin-left: -180px;
+    width: 260px;
+    height: 60px;
+    transition: transform 3s ease 0s;
+}
+
+.switchCards {
+    width: 100px;
+    height: 40px;
+    background-color: bisque;
+    transform: translate(350px, 10px);
+}

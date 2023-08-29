@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-color: none;
+    @include setBackground('../../resources/table/table.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings {
+    position: absolute;
+    right: -10px;
+    top: 90px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gameCompleted {
+    width: 200px;
+    height: 50px;
+    background-color: bisque;
+    span {
+        font-weight: bold;
+    }
+}
+
+.heroWin {
+    color: brown;
+}
+
+.opponentWin {
+    color: blue;
+}

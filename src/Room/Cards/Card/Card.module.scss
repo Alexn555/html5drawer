@@ -1,0 +1,14 @@
+@import '../../../styles/mixins';
+
+.container {
+    position: absolute;
+    @include setBackground('../../../resources/cards/x.gif');
+    width: 40px;
+    height: 55px;
+    display: inline-block;
+    transition: transform 3s ease 1s;
+}
+
+.heroCards {
+    cursor: pointer;
+}

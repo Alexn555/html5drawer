@@ -1,0 +1,29 @@
+
+$height: 24px;
+$pointerWidth: 24px;
+
+.container {
+    position: relative;
+}
+
+.audioSlider {
+    width: 400px;
+    height: $height;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    background-color: bisque;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.audioThumb {
+    width: $pointerWidth;
+    height: $height;
+    background-color: coral;
+}
+
+.audioTrack {
+    width: $pointerWidth;
+    height: $height;
+    background-color: wheat;
+}

@@ -1,0 +1,21 @@
+%baseChip {
+    width: 60px;
+    height: 30px;
+    border: none;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 10px;
+    border: 1px dashed orange;
+    cursor: pointer;
+}
+
+.chip {
+    @extend %baseChip;
+}
+
+.chipSelected {
+    @extend %baseChip;
+    transform: translateY(-6px);
+    border: 1px dashed brown;
+}

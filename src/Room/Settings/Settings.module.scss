@@ -1,0 +1,63 @@
+@import '../../styles/variables';
+
+.container {
+  position: absolute;
+  display: block;
+  width: 600px;
+  height: 400px;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-radius: 2rem;
+  z-index: 2000;
+}
+
+.navigation {
+    width: 60%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #39A2DB;
+    border-radius: 2rem;
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+
+    li {
+        width: 50%;
+        padding: 1rem;
+        list-style: none;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.7s;
+        border-bottom-left-radius: 2rem;
+        border-top-left-radius: 2rem;
+
+        &:nth-child(2) {
+            border-radius: 0;
+            border-bottom-right-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
+        &:hover {
+            background: rgba(50, 224, 196, 0.15);
+        }
+        &.active {
+            background: #39A2DB;
+        }
+    }
+}
+
+.outlet {
+    border: 1px solid $mainBorder;
+}
+
+.close {
+    padding-top: 20px;
+    button {
+        width: 100px;
+        height: 40px;
+        background: none;
+        cursor: pointer;
+    }
+}
