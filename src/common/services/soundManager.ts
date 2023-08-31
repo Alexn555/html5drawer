@@ -5,7 +5,7 @@ enum extensions {
     mp3 = 'mp3'
 }
 
-export function getSoundSource(event: SoundEvents, mainPath = `${process.env.PUBLIC_URL}}/sounds/`) {
+export function getSoundSource(event: SoundEvents, mainPath = `${process.env.PUBLIC_URL}/sounds/`) {
     let sound = '';
     switch (event) {
         case SoundEvents.CARD:
