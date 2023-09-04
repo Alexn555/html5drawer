@@ -36,13 +36,13 @@ This game uses Session Storage to save user settings.
 Just good notice.
 
 Structure: 
-In terms of code game uses React, React-mitt, react-slider, use-sound
+In terms of code: game uses React, React-mitt, react-slider, use-sound
 hook for SoundManager.
-Typically classic approach and connection between components
+Typically classic approach. Connection between components
 is done using react-mitt events, emit, on handlers.
 Settings are saved using sessionStorage helper.
 
-In terms CSS, SCSS modules are used in any serious component.
+In terms of CSS, SCSS modules are used in any serious component.
 Also some variables, mixins.
 
 You can easily change global configurations inside 
