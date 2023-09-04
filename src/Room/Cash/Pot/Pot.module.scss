@@ -1,5 +1,6 @@
 
 @import '../../../styles/mixins';
+@import '../../../styles/variables';
 
 .container {
     position: relative;
@@ -23,8 +24,8 @@
         font-size: normal;
         font-weight: bold;
         padding-bottom: 10px;
-        background-color: bisque;
-        color: brown;
+        background-color: $potBg;
+        color: $potText;
         height: 20px;
     }
 }

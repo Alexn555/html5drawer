@@ -1,15 +1,17 @@
+@import '../../styles/variables';
+
 .container {
     position: absolute;
     width: 100%;
     height: 96%;
-    background-color: bisque;
-    color: rebeccapurple;
+    background-color: $introBg;
+    color: $introText;
     z-index: 1000;
 }
 
 %baseBtn {
-    background-color: sandybrown;
-    color: white;
+    background-color: $introBtnBg;
+    color: $introBtnText;
     font-size: x-large;
     margin-top: 100px;
     cursor: pointer;
@@ -22,7 +24,7 @@
 }
 
 .msgActive {
-    background-color: gold;
+    background-color: $introSavedOption;
 }
 
 .start {

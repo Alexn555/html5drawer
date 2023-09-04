@@ -5,7 +5,7 @@
   display: block;
   width: 600px;
   height: 400px;
-  background-color: antiquewhite;
+  background-color: $settingsBg;
   box-sizing: border-box;
   padding: 0 10px;
   border-radius: 2rem;
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #39A2DB;
+    border: 1px solid $settingsNav;
     border-radius: 2rem;
     @media (max-width: 768px) {
         width: 90%;
@@ -40,10 +40,10 @@
             border-top-right-radius: 2rem;
         }
         &:hover {
-            background: rgba(50, 224, 196, 0.15);
+            background: $settingsItemTip;
         }
         &.active {
-            background: #39A2DB;
+            background: $settingsItemActive;
         }
     }
 }

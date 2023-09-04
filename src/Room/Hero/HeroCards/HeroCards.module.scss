@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .container {
     margin-top: -40px;
     margin-left: -180px;
@@ -9,6 +11,6 @@
 .switchCards {
     width: 100px;
     height: 40px;
-    background-color: bisque;
+    background-color: $heroSwCardsBg;
     transform: translate(350px, 10px);
 }

@@ -1,4 +1,5 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
 
 .container {
     position: relative;
@@ -24,16 +25,16 @@
 .gameCompleted {
     width: 200px;
     height: 50px;
-    background-color: bisque;
+    background-color: $gameCompleted;
     span {
         font-weight: bold;
     }
 }
 
 .heroWin {
-    color: brown;
+    color: $heroWin;
 }
 
 .opponentWin {
-    color: blue;
+    color: $oppWin;
 }

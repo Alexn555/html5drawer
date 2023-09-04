@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .container {
     position: absolute;
     top: -100px;
@@ -16,13 +18,13 @@
 
 .stack {
     font-size: smaller;
-    color: gainsboro;
+    color: $oppStackText;
 }
 
 .decision {
     width: 70px;
     height: 20px;
-    background-color: bisque;
-    color: brown;
+    background-color: $oppDecisionBg;
+    color: $oppDecisionText;
     transform: translate(-50px, -80px);
 }

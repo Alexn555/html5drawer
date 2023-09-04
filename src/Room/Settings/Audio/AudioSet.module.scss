@@ -1,4 +1,6 @@
 
+@import '../../../styles/variables';
+
 $height: 24px;
 $pointerWidth: 24px;
 
@@ -9,9 +11,9 @@ $pointerWidth: 24px;
 .audioSlider {
     width: 400px;
     height: $height;
-    border: 1px solid orangered;
+    border: 1px solid $settingsAudioBorder;
     border-radius: 4px;
-    background-color: bisque;
+    background-color: $settingsAudioBg;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -19,11 +21,11 @@ $pointerWidth: 24px;
 .audioThumb {
     width: $pointerWidth;
     height: $height;
-    background-color: coral;
+    background-color: $settingsAudioThumb;
 }
 
 .audioTrack {
     width: $pointerWidth;
     height: $height;
-    background-color: wheat;
+    background-color: $settingsAudioTrack;
 }

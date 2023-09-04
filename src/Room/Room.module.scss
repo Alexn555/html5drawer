@@ -1,7 +1,9 @@
+@import '../styles/variables';
+
 .container {
     width: 80vw;
     height: 90vh;
-    background-color: aqua;
+    background-color: $roomCover;
     display: flex;
     align-items: center;
     text-align: center;

@@ -1,1 +1,3 @@
-$mainBorder: orange;
+@import './theme/themeMain.scss';
+
+$mainBorder: $orangeBorder;

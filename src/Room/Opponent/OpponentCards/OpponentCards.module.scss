@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .container {
     margin-top: 60px;
     margin-left: -180px;
@@ -9,5 +11,5 @@
 .changeCards {
     width: 100px;
     height: 20px;
-    background-color: bisque;
+    background-color: $oppChangeCardsBg;
 }
