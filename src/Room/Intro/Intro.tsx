@@ -11,7 +11,7 @@ function Intro() {
   const { emitter } = useMitt();
   const [visible, setVisible] = useState(true);
   const [mActive, setmActive] = useState(false);
-  const sessionStore = new StorageHandler();
+  const sessionStore = StorageHandler.getInstance();
 
   useEffect(() => {
     setVisible(MAIN_CONFIG.INTRO_ENABLED);

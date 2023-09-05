@@ -9,7 +9,7 @@ import { StorageKeys, roomColors, tables } from '../../../Config/constants/setti
 
 const MainSettings: FC = () => {
   const { emitter } = useMitt();
-  const sessionStore = new StorageHandler();
+  const sessionStore = StorageHandler.getInstance();
   const [roomColor, setRoomColor] = useState('');
   const [table, setTable] = useState('');
 

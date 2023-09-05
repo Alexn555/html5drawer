@@ -1,4 +1,18 @@
 export default class StorageHandler {
+
+  private static _instance: StorageHandler = new StorageHandler();
+    
+  constructor() {
+    if(StorageHandler._instance){
+        throw new Error("Error: Instantiation failed: Use StorageHandler.getInstance() instead.");
+    }
+    StorageHandler._instance = this;
+  }
+
+  static getInstance(): StorageHandler {
+    return StorageHandler._instance;
+  }
+  
   save(key: string, value: string) {
     //save key from sesstion storage
     return sessionStorage.setItem(key, value);

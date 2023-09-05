@@ -10,7 +10,7 @@ import styles from './AudioSet.module.scss';
 const AudioSettings: FC = () => {
   const { emitter } = useMitt();
   const [volume, setVolume] = useState(10);
-  const sessionStore = new StorageHandler();
+  const sessionStore = StorageHandler.getInstance();
 
   useEffect(() => {
     const saved = sessionStore.getEl(StorageKeys.AUDIO_VOLUME);
