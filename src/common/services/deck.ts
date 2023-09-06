@@ -1,6 +1,19 @@
 import { CardItem, DeckProps, Suit } from "../../Config/constants/cards";
 
 export default class Deck {
+    private static _instance: Deck = new Deck();
+    
+    constructor() {
+      if(Deck._instance){
+          throw new Error("Error: Instantiation failed: Use StorageHandler.getInstance() instead.");
+      }
+      Deck._instance = this;
+    }
+  
+    static getInstance(): Deck {
+        return Deck._instance;
+    }
+      
     openDeck(): CardItem[] {
         const deck = this.createDeck();
         return this.shuffle(deck);
