@@ -12,8 +12,18 @@ enum AgreesiveStyles {
 /* Opponent AI */
 export default class OpponentAI {
     hand;
-    constructor () {
-        this.hand = new HandAnalyzer();
+    private static _instance: OpponentAI = new OpponentAI();
+
+    constructor() {
+      if(OpponentAI._instance){
+        throw new Error("Error: Instantiation failed: Use StorageHandler.getInstance() instead.");
+      }
+      this.hand = HandAnalyzer.getInstance();
+      OpponentAI._instance = this;
+    }
+    
+    static getInstance(): OpponentAI {
+        return OpponentAI._instance;
     }
 
     bet(stack: number, heroStack: number): number {

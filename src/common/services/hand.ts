@@ -23,6 +23,15 @@ type HandStreingth = {
 type foundPair = any;
 
 export default class HandAnalyzer {
+    private static _instance: HandAnalyzer = new HandAnalyzer();
+
+    constructor() {
+      if(HandAnalyzer._instance){
+        throw new Error("Error: Instantiation failed: Use StorageHandler.getInstance() instead.");
+      }
+      HandAnalyzer._instance = this;
+    }
+
     lowStreight = [2, 3, 4, 5, 14];
     straightsValue = [4, 8, 9];
     mockCards = [
@@ -32,6 +41,11 @@ export default class HandAnalyzer {
         { value: CardValue.Four, suit: Suit.Spades },
         { value: CardValue.Five, suit: Suit.Spades }
     ];
+
+    
+    static getInstance(): HandAnalyzer {
+        return HandAnalyzer._instance;
+    }
 
     allAreEqual(array: (string | number)[]) {
         // eslint-disable-next-line

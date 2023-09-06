@@ -19,7 +19,7 @@ type DeckAttributes = {
 
 const Deck: FC<DeckAttributes> = (props: DeckAttributes) => {
   const { gamePhase } = props;
-  const hand = new HandAnalyzer();
+  const hand = HandAnalyzer.getInstance();
   const deckHandler = new DeckHandler();
   const { emitter } = useMitt();
   const [position, setPosition] = useState(0);

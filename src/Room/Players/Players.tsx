@@ -19,7 +19,7 @@ type PlayerAttributes = {
 const Players: FC<PlayerAttributes> = (props: PlayerAttributes) => {
   const { emitter } = useMitt();
   const { gamePhase } = props;
-  const opponentAI = new OpponentAI();
+  const opponentAI = OpponentAI.getInstance();
   const decisionTime = MAIN_CONFIG.OPPONENT.DECISION_TIME;
   const [isDealerVis] = useState(false);
   const [oppDecision, setOppDecision] = useState('');

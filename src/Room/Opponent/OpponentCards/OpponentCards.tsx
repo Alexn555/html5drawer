@@ -13,7 +13,7 @@ import { MAIN_CONFIG } from '../../../Config/constants/config';
 
 const OpponentCards: FC = () => {
   const { emitter } = useMitt();
-  const opponentAI = new OpponentAI();
+  const opponentAI = OpponentAI.getInstance();
   const [position, setPosition] = useState(0);
   const [cards, setCards] = useState<CardItem[]>([]);
   const [count, setDeckCount] = useState(0);
