@@ -30,4 +30,4 @@ export const MAIN_CONFIG = {
         DECISION_TIME: 2000,
         INIT_CLOSED_CARDS: true
     }
-}
+} as const;
