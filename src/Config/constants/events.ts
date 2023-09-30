@@ -11,7 +11,6 @@ export enum WindowEvents {
     OPEN_SETTINGS = 'open_settings'
 }
 
-
 export enum SettingsEvents {
     INTRO_HIDE = 'intro_hide',
     ROOM_COLOR = 'room_color',

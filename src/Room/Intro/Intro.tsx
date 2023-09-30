@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useMitt } from 'react-mitt';
 
 import styles from './Intro.module.scss';
@@ -23,6 +23,16 @@ function Intro() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const handleActive = useCallback(() => {
+    setmActive(true);
+    sessionStore.save(SettingsEvents.INTRO_HIDE, 'true')
+  }, [setmActive]);
+
+  const handleStartGame = useCallback(() => {
+    setVisible(false);
+    emitter.emit(GamePhase.START_GAME);
+  }, [setVisible]);
+
   return (
     <>
        {visible ? 
@@ -33,17 +43,15 @@ function Intro() {
             <button 
               className={`${styles.hideMessage} 
                 ${mActive ? styles.msgActive : ''}`} 
-              onClick={() => { 
-                setmActive(true);
-                sessionStore.save(SettingsEvents.INTRO_HIDE, 'true');
-            }}>Do not show me this message again</button> 
+              onClick={handleActive}>
+                Do not show me this message again
+            </button> 
             <p></p>
             <button 
               className={styles.start} 
-              onClick={() => { 
-                setVisible(false);
-                emitter.emit(GamePhase.START_GAME);
-            }}>Start</button> 
+              onClick={handleStartGame}>
+              Start
+            </button> 
           </div> 
        : null}
     </>

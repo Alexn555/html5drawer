@@ -120,7 +120,8 @@ function Table() {
   const showSettingsButton = (isVisible: boolean) => {
     return isVisible ? (
       <div className={styles.settings} onClick={() => { 
-        emitter.emit(WindowEvents.OPEN_SETTINGS); }}>
+        emitter.emit(WindowEvents.OPEN_SETTINGS); 
+      }}>
         <button>Settings</button>
       </div>
     ) : null;
