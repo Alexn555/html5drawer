@@ -17,7 +17,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![ScreenShot](http://norwaydict.com/html5games/html5drawer/html5drawer.png)
+![ScreenShot](https://alexn555-racing.com/projects/html5games/html5drawer/html5drawer.png)
 
 ## Overall Description
 
@@ -28,7 +28,7 @@ Also React-mitt was used to connect component with pubSub pattern, that is, sign
 Game only for 2 players -> Hero (You) and Opponent (AI player).
 
 Demo: 
-[link](https://norwaydict.com/html5games/html5drawer/)
+[link](https://alexn555-racing.com/projects/html5games/html5drawer/)
 
 
 NOTICE: 
